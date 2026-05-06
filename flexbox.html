@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /*Cada div é apresentada pela classe "card"*/
+
+        .card {
+
+            border: solid 1px;
+            padding: 8px;
+            background-color: aqua;
+            width: 30%;
+
+        }
+
+        .container {
+            /*Habilitando o flexbox*/
+
+            display: flex;
+            background-color: greenyellow;
+            padding: 8px 0;
+            height: 600px;
+
+            /*Alinhando horizontalmente dentro da linha/container flexbox */
+
+            justify-content: space-evenly;
+
+            /*Alinhando verticalmente dentro da linha/container flexbox */
+
+            align-items: center;
+
+            /*Habilitando a "quebra" do container Flexbox.
+            Enquanto houver espaço para os itens (cards)
+            ficarem lado a lado, nada muda. Quando acabar o espaço, automaticamente o flex "quebra e faz com que os itens sejam jogados para baixo."*/
+
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Usando os recursos do Flexbox</h1>
+
+    <hr>
+
+    <p>Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuiçao de
+        elementos na página. Muito útil na elaboraçao de layouts baseados em linhas/colunas.</p>
+
+    <div class="container">
+
+
+        <div class="card">
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, rem.</p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nulla.</p>
+
+        </div>
+
+        <div class="card">
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias?</p>
+
+        </div>
+
+        <div class="card">
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias?</p>
+
+        </div>
+
+        <div class="card">
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias?</p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
